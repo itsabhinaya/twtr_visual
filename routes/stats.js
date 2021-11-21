@@ -7,24 +7,6 @@ router.get('/', function(req, res, next) {
 });
 
 
-// router.post('/twi_user', function(req,res){
-//   console.log(req.body);
-//   res.render("stats", {user:"user"});
-// })
-
-
-// router.post('/', function (req, res) {
-//     console.log(req.body.title);
-//     res.send('Post page');
-// });
-
-/* Login user */
-router.post('/stats', function (req, res, next) {
-	const username = req.body.user;
-	res.render('stats', {user: username});
-
-});
-
 module.exports = router;
 
 
