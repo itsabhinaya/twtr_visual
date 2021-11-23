@@ -4,6 +4,7 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const Twitter = require("twitter-lite");
 
 var indexRouter = require('./routes/index');
 var statsRouter = require('./routes/stats');
